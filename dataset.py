@@ -5,7 +5,7 @@ def preprocess(number):
     """
     Fake preprocess function for tf.data.Dataset
     """
-    label = tf.zeros([20000])
+    label = tf.zeros([1000])
     image = tf.zeros([256, 256, 3])
     image = tf.image.random_flip_left_right(image)
     image = tf.image.resize(image, (224, 224))
