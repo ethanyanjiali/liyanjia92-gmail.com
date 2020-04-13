@@ -3,7 +3,7 @@ import time
 
 import tensorflow as tf
 
-from model improt ResNet50
+from model import ResNet50
 from dataset import create_dataset
 
 

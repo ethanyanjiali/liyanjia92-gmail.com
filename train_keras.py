@@ -8,7 +8,7 @@ from tensorflow.keras.layers import (
     Softmax,
 )
 
-from model improt ResNet50
+from model import ResNet50
 from dataset import create_dataset
 
 
