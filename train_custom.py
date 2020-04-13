@@ -44,7 +44,7 @@ def train_custom():
                 strategy.reduce(tf.distribute.ReduceOp.SUM,
                                 per_replica_loss,
                                 axis=None)
-                delta_t = tf.strings.as_string((tf.timestamp() - t0) / 1000,
+                delta_t = tf.strings.as_string((tf.timestamp() - t0) * 1000,
                                                precision=1)
                 tf.print(delta_t, 'ms/step')
                 t0 = tf.timestamp()
